@@ -14,6 +14,7 @@ public class MDI extends javax.swing.JFrame {
     /**
      * Creates new form MDI
      */
+    private MantenimientoEmpleados mEmpleado;
     public MDI() {
         initComponents();
     }
@@ -50,6 +51,11 @@ public class MDI extends javax.swing.JFrame {
         jMenu1.setText("Abrir");
 
         jMenuItem1.setText("MantenimientoEmpleado");
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1ActionPerformed(evt);
+            }
+        });
         jMenu1.add(jMenuItem1);
 
         jMenuItem2.setText("MantenimientoClientes");
@@ -131,6 +137,12 @@ public class MDI extends javax.swing.JFrame {
     private void jMenuItem9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem9ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem9ActionPerformed
+
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+       mEmpleado = new MantenimientoEmpleados();
+       this.add(mEmpleado);
+       mEmpleado.setVisible(true);
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     /**
      * @param args the command line arguments
