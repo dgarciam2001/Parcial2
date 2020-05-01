@@ -30,6 +30,8 @@ public class MDI extends javax.swing.JFrame {
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
+        jMenuItem2 = new javax.swing.JMenuItem();
+        jMenuItem3 = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
         jMenu3 = new javax.swing.JMenu();
         jMenu4 = new javax.swing.JMenu();
@@ -40,8 +42,14 @@ public class MDI extends javax.swing.JFrame {
 
         jMenu1.setText("Abrir");
 
-        jMenuItem1.setText("jMenuItem1");
+        jMenuItem1.setText("MantenimientoEmpleado");
         jMenu1.add(jMenuItem1);
+
+        jMenuItem2.setText("MantenimientoClientes");
+        jMenu1.add(jMenuItem2);
+
+        jMenuItem3.setText("MantenimientoPuesto");
+        jMenu1.add(jMenuItem3);
 
         jMenuBar1.add(jMenu1);
 
@@ -120,5 +128,7 @@ public class MDI extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu6;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JMenuItem jMenuItem3;
     // End of variables declaration//GEN-END:variables
 }
